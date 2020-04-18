@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<!-- 第一個切版練習鍛鍊成果 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AutoPractice</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- 首頁的標頭以及下方圖片到藍區之前 -->
+    <div class="container">
+        <header>
+            <img src="img/Logo.svg" alt="Pixary logo" class="logo">
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="img/Menu.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="img/Close.svg" alt="exit menu"></li>
+                    <li><a href="#">首頁</a></li>
+                    <li><a href="#">下載</a></li>
+                    <li><a href="#">關於</a></li>
+                    <li><a href="#">支援</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <img src="img/iPhoneX.svg" alt="app graphic" class="app">
+            <div class="sticky">
+                <h1><b>Take pictures and make VFX wherever you are</b></h1>
+                <p class="subhead">Have fun and upload to instargram</p>
+                <a href="#" class="cta">點此下載</a>
+                <img src="img/Scrolling.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+            </div>
+        </section>
+    </div>
+<!-- 藍區 -->
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="img/Icon-awesome-camera-retro.svg" alt="Camera icon">
+                    <h3>更多元的相機選項</h3>
+                    <p>比一般手機App更多的調整參數、更多的可動選項、讓您體驗手動相機般的使用體驗，並提供海量濾鏡與特效、上字、標記等功能</p>
+                </li>
+                <li>
+                    <img src="img/Icon-ionic-md-aperture.svg" alt="Aperture icon">
+                    <h3>大小光圈調整曝光時間</h3>
+                    <p>手動自由調整光圈功能，目前業界唯一，不論是連拍、慢速攝影、長時間曝光、縮時攝影、慢動作都能一次完成</p>
+                </li>
+                <li>
+                    <img src="img/Icon-material-iso.svg" alt="ISO icon">
+                    <h3>自動白平衡夜間攝影功能</h3>
+                    <p>不論過亮、過暗都能自動調整優化的先進演算技術，透過HDR與景深處理技術，還原最真實如肉眼直視般的影像</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!-- 灰區 -->
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="img/pexels-photo-1382731.svg" alt="User testimonial picture">
+                        <blockquote>Pixary可在安卓與ios安裝，用起來方便快速、簡單操作，能夠在沒有電腦的情況下做出高質感的簡易修圖與合成，非常適合不想帶相機、一堆裝備的朋友！
+                        </blockquote>
+                        <figcaption>-張提雅</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/pexels-photo-1701209.svg" alt="User testimonial picture">
+                        <blockquote>Pixary讓我不用擔心沒有配備紅外線、夜間攝影的困擾，對於人眼見般的影像還原程度也是無可挑剔，對於動物的連拍與慢動作攝影也是信手捻來！</blockquote>
+                        <figcaption>-佐藤小五郎</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!-- 白區 -->
+    <div class="white-container">
+        <div>
+            <h2 class="hide-mobile">了解更多、觀賞教學</h2>
+            <h2 class="hide-desktop">了解更多<br>觀賞教學</h2>
+            <a href="#" class="cta">觀看教學</a>
+        </div>
+        <div>
+            <h2 class="hide-mobile">現在免費下載！立即體驗</h2>
+            <h2 class="hide-desktop">現在免費下載！<br>立即體驗</h2>
+            <a href="#" class="cta">點此下載</a>
+        </div>
+    </div>
+<!-- 底標、尾區 -->
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#"><img class="gotop" src="img/GoTop.svg" alt="Go Top"></a>
+                <div>
+                    <ul class="footer-links">
+                        <li><a href="#">法律資訊</a></li>
+                        <li><a href="#">常見問題</a></li>
+                        <li><a href="#">報錯</a></li>
+                        <li><a href="#">說明文件</a></li>
+                    </ul>
+                </div>
+                <div class="footer-logoSet">
+                    <a href="#">
+                        <img src="img/Logo-W.svg" class="logo" alt="logo">
+                    </a>
+                    <p class="address">2019 Pixary® All Rights Reserved copyright ©</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- JS腳本 -->
+    <script>
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function (e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function (e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+
+</body>
+
+</html>
